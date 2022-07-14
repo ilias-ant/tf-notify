@@ -1,0 +1,4 @@
+[run]
+source = tf-notify
+omit = *__init__*
+       *tests*

@@ -1,0 +1,66 @@
+[tool.poetry]
+name = "tf-notify"
+version = "0.1.0"
+description = "A Tensorflow Keras callback to send notifications to a messaging app of your choice."
+authors = ["Ilias Antonopoulos <ilias.antonopoulos@yahoo.gr>"]
+readme = "README.md"
+license = "Apache-2.0 license"
+homepage = "https://pypi.org/project/tf-notify"
+repository = "https://github.com/ilias-ant/tf-notify"
+keywords = ["tensorflow", "keras", "callback", "notifications", "slack"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Science/Research",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: Apache Software License",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: 3 :: Only",
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/ilias-ant/tf-notify/issues"
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.11"
+
+tensorflow = "~2.9.1"
+
+[tool.poetry.dev-dependencies]
+autoflake = "^1.4"
+bandit = "^1.7.4"
+black = "^22.6.0"
+isort = "^5.10.1"
+pre-commit = "^2.20.0"
+pytest = "^7.1.2"
+pytest-cov = "^3.0.0"
+
+[tool.black]
+line-length = 88
+skip-string-normalization = true
+target-version = ['py37', 'py38', 'py39', 'py310']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | \.pytest_cache
+  | \.test_coverage
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
