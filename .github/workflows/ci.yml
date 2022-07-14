@@ -24,10 +24,9 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: ${{ matrix.python-version }}
-    - name: Install Poetry
+    - name: Install Poetry with the official installer
       run: |
-        curl -sSL https://install.python-poetry.org | python -
-        export PATH="/root/.local/bin:$PATH"
+        curl -sSL https://install.python-poetry.org | python3 -
         export PATH="/Users/runner/.local/bin:$PATH"
     - name: Install Package Dependencies (required and dev)
       run: |
