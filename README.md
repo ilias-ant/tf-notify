@@ -44,8 +44,12 @@ model.fit(
         SlackCallback(webhook_url='https://url.to/webhook')
     ],  # send a Slack notification when training ends!
 )
-
 ```
+
+You should see something like this on your Slack:
+
+<img src="static/slack_notification_example.png" width="50%" text="https://www.researchgate.net/figure/Sample-images-from-MURA-dataset_fig2_348282230">
+
 
 
 ## How to contribute
