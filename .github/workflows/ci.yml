@@ -24,17 +24,17 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: ${{ matrix.python-version }}
-    - name: Install Poetry with the official installer
+    - name: Install Poetry
       run: |
-        curl -sSL https://install.python-poetry.org | python3 -
-        export PATH="/Users/runner/.local/bin:$PATH"
+        python -m pip install --upgrade pip
+        python -m pip install poetry
     - name: Install Package Dependencies (required and dev)
       run: |
         poetry check
         poetry install
     - name: Inspect Code Security
       run: |
-        poetry run bandit -r tf-notify
+        poetry run bandit -r tf-notify -c "pyproject.toml"
     - name: Inspect Code Formatting
       run: |
         poetry run black . --check

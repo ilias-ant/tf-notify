@@ -139,3 +139,5 @@ dmypy.json
 cython_debug/
 
 .idea
+
+test_module.py
