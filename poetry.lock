@@ -63,7 +63,6 @@ colorama = {version = ">=0.3.9", markers = "platform_system == \"Windows\""}
 GitPython = ">=1.0.1"
 PyYAML = ">=5.3.1"
 stevedore = ">=1.20.0"
-toml = {version = "*", optional = true, markers = "extra == \"toml\""}
 
 [package.extras]
 test = ["coverage (>=4.5.4)", "fixtures (>=3.0.0)", "flake8 (>=4.0.0)", "stestr (>=2.5.0)", "testscenarios (>=0.5.0)", "testtools (>=2.3.0)", "toml", "beautifulsoup4 (>=4.8.0)", "pylint (==1.9.4)"]
@@ -959,7 +958,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.7,<3.11"
-content-hash = "d9be169758ab18ae8004f0376db570ef3e2a7300f5988f2c1e3d12dc4e95a9e2"
+content-hash = "2570ceb8336770fb4ce44af4bb6676ba51b56c226025e44d095421c9dee10fd8"
 
 [metadata.files]
 absl-py = []

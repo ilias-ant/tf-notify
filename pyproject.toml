@@ -31,7 +31,7 @@ tensorflow = "~2.9.1"
 
 [tool.poetry.dev-dependencies]
 autoflake = "^1.4"
-bandit = {version = "^1.7.4", extras = ["toml"]}
+bandit = "^1.7.4"
 black = "^22.6.0"
 isort = "^5.10.1"
 pre-commit = "^2.20.0"
