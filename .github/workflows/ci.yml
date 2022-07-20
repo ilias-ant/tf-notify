@@ -34,7 +34,7 @@ jobs:
         poetry install
     - name: Inspect Code Security
       run: |
-        poetry run bandit -r tf-notify -c "pyproject.toml"
+        poetry run bandit -c "pyproject.toml"
     - name: Inspect Code Formatting
       run: |
         poetry run black . --check

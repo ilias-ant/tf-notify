@@ -27,6 +27,5 @@ repos:
     hooks:
       - id: bandit
         language_version: python3
-        args:
-          - -r
-          - .
+        args: ["-c", "pyproject.toml"]
+        additional_dependencies: ["bandit[toml]"]
