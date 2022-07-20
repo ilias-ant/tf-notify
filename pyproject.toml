@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "tf-notify"
+name = "tfnotify"
 version = "0.1.0"
 description = "A Tensorflow Keras callback to send notifications to a messaging app of your choice."
 authors = ["Ilias Antonopoulos <ilias.antonopoulos@yahoo.gr>"]
