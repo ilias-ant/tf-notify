@@ -23,9 +23,9 @@ repos:
         language_version: python3
 
   - repo: https://github.com/PyCQA/bandit
-    rev: '1.7.4'
+    rev: 1.7.4
     hooks:
       - id: bandit
-        language_version: python3
         args: ["-c", "pyproject.toml"]
-        additional_dependencies: ["bandit[toml]"]
+        additional_dependencies: ["toml"]
+        language_version: python3
