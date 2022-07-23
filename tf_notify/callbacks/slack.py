@@ -4,6 +4,36 @@ from .base import BaseNotificationCallback
 
 
 class SlackCallback(BaseNotificationCallback):
+    """A custom tf.callbacks.Callback that provides enables instant integration with Slack messaging app.
+
+    **Note**: Any attributes or methods prefixed with _underscores are forming a so called "private" API, and is
+    for internal use only. They may be changed or removed at anytime.
+
+    Example:
+        >>> import tensorflow as tf
+        >>> from tf_notify import SlackCallback
+        >>>
+        >>> model = tf.keras.Sequential(name='neural-network')
+        >>> model.add(tf.keras.layers.Dense(1, input_dim=784))
+        >>> model.compile(
+        >>>     optimizer=tf.keras.optimizers.RMSprop(learning_rate=0.1),
+        >>>     loss="mean_squared_error",
+        >>>     metrics=["mean_absolute_error"],
+        >>> )
+        >>>
+        >>> model.fit(
+        >>>     x_train,
+        >>>     y_train,
+        >>>     batch_size=128,
+        >>>     epochs=2,
+        >>>     verbose=0,
+        >>>     validation_split=0.5,
+        >>>     callbacks=[
+        >>>         SlackCallback(webhook_url='https://url.to/webhook')
+        >>>     ],
+        >>> )
+    """
+
     def __init__(self, webhook_url: str):
 
         self.webhook_url = webhook_url

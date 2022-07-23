@@ -1,0 +1,50 @@
+site_name: tf-notify
+site_description: tf-notify documentation page
+site_author: ilias-ant
+
+repo_name: ilias-ant/tf-notify
+repo_url: https://github.com/ilias-ant/tf-notify
+edit_uri: ""
+
+theme:
+  name: material
+  locale: en
+  palette:
+  - scheme: default
+    primary: blue
+    accent: amber
+    toggle:
+      icon: material/toggle-switch-off-outline
+      name: Switch to dark mode
+  - scheme: slate
+    primary: orange
+    accent: amber
+    toggle:
+      icon: material/toggle-switch
+      name: Switch to light mode
+  features:
+    - navigation.instant
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+
+plugins:
+- search
+- mkdocstrings:
+    watch:
+      - tf-notify
+    default_handler: python
+
+nav:
+    - Home: index.md
+    - License: license.md
+
+extra:
+    social:
+        - icon: fontawesome/brands/github-alt
+          link: 'https://github.com/ilias-ant'
+        - icon: fontawesome/brands/linkedin
+          link: 'https://www.linkedin.com/in/ilias-ant'
