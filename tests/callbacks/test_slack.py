@@ -1,19 +1,14 @@
-from unittest import mock
+import json
 
-import pytest
 import responses
 import tensorflow as tf
 
-
-@pytest.fixture
-def callback():
-    with mock.patch("tfnotify.SlackCallback") as callback_:
-        yield callback_(webhook_url="https://url.to/webhook")
+from tf_notify import SlackCallback
 
 
 class TestSlackCallback:
     @responses.activate
-    def test_callback_occurs_on_train_end(self, callback):
+    def test_callback_occurs_on_train_end(self):
 
         responses.add(
             responses.POST,
@@ -46,7 +41,12 @@ class TestSlackCallback:
             epochs=2,
             verbose=0,
             validation_split=0.5,
-            callbacks=[callback],
+            callbacks=[SlackCallback(webhook_url="https://url.to/webhook")],
         )
 
-        assert callback.on_train_end.call_count == 1
+        assert len(responses.calls) == 1
+
+        payload = json.loads(responses.calls[0].request.body)
+        assert responses.calls[0].request.url == "https://url.to/webhook"
+        assert "text" in payload
+        assert payload["text"] == "model <neural-network> has completed its training!"

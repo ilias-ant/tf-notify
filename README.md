@@ -21,7 +21,7 @@ pip install tf-notify
 
 ```python
 import tensorflow as tf
-from tfnotify import SlackCallback
+from tf_notify import SlackCallback
 
 
 # define the tf.keras model to add callbacks to
