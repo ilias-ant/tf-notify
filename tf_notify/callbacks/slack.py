@@ -5,10 +5,7 @@ from .base import BaseNotificationCallback
 
 class SlackCallback(BaseNotificationCallback):
     """
-    A custom tf.callbacks.Callback that provides enables instant integration with Slack messaging app.
-
-    **Note**: Any attributes or methods prefixed with _underscores are forming a so called "private" API, and is
-    for internal use only. They may be changed or removed at anytime.
+    A custom tf.callbacks.Callback that provides instant integration with Slack messaging app.
 
     Examples:
         >>> import tensorflow as tf
@@ -33,6 +30,9 @@ class SlackCallback(BaseNotificationCallback):
         >>>         SlackCallback(webhook_url='https://url.to/webhook')
         >>>     ],
         >>> )
+
+    **Note**: Any attributes or methods prefixed with _underscores are forming a so called "private" API, and is
+    for internal use only. They may be changed or removed at anytime.
     """
 
     def __init__(self, webhook_url: str):
