@@ -8,8 +8,6 @@
 
 This package provides a [tf.keras](https://www.tensorflow.org/api_docs/python/tf/keras/callbacks/Callback) callback to send notifications to a messaging app of your choice.
 
-## Supported Apps
-
 The following apps are currently supported.
 
 - [Slack](https://tf-notify.readthedocs.io/en/latest/api/#tf_notify.callbacks.slack.SlackCallback)
