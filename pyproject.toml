@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "tf-notify"
 version = "0.1.0.beta1"
-description = "A Tensorflow Keras callback to send notifications to a messaging app of your choice."
+description = "Want to get notified on the progress of your Tensorflow model training? Enter, a Tensorflow Keras callback to send notifications on the messaging app of your choice."
 authors = ["Ilias Antonopoulos <ilias.antonopoulos@yahoo.gr>"]
 readme = "README.md"
 license = "Apache-2.0 license"

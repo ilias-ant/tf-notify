@@ -3,7 +3,9 @@
 [![PyPI](https://img.shields.io/pypi/v/tf-notify?color=blue&label=PyPI&logo=PyPI&logoColor=white)](https://pypi.org/project/tf-notify/) [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/tf-notify?logo=python&logoColor=white)](https://www.python.org/) [![codecov](https://codecov.io/gh/ilias-ant/tf-notify/branch/main/graph/badge.svg?token=2H0VB8I8IH)](https://codecov.io/gh/ilias-ant/tf-notify) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/ilias-ant/tf-notify/CI)](https://github.com/ilias-ant/tf-notify/actions/workflows/ci.yml)
  [![PyPI - Wheel](https://img.shields.io/pypi/wheel/tf-notify?color=orange)](https://www.python.org/dev/peps/pep-0427/)
 
-A [tf.keras](https://www.tensorflow.org/api_docs/python/tf/keras/callbacks/Callback) callback to send notifications to a messaging app of your choice.
+> Want to get notified on the progress of your Tensorflow model training?
+
+This package provides a [tf.keras](https://www.tensorflow.org/api_docs/python/tf/keras/callbacks/Callback) callback to send notifications to a messaging app of your choice.
 
 ## Install
 
@@ -15,7 +17,14 @@ pip install tf-notify
 
 ## Supported Apps
 
-- [Slack](https://slack.com/)
+The following apps are currently supported. But, do check the project frequently, as many more will soon be supported!
+
+<table>
+  <tr>
+    <td><img src="https://github.com/ilias-ant/tf-notify/blob/main/static/logos/slack.png" height="128" width="128" style="max-height: 128px; max-width: 128px;"><a href="https://tf-notify.readthedocs.io/en/latest/api/#tf_notify.callbacks.slack.SlackCallback">Slack</a></td>
+    <td></td>
+  </tr>
+</table>
 
 ## Usage
 
@@ -48,7 +57,7 @@ model.fit(
 
 You should see something like this on your Slack:
 
-<img src="static/slack_notification_example.png" width="50%" text="https://www.researchgate.net/figure/Sample-images-from-MURA-dataset_fig2_348282230">
+<img src="https://github.com/ilias-ant/tf-notify/blob/main/static/slack_notification_example.png" width="50%" text="https://www.researchgate.net/figure/Sample-images-from-MURA-dataset_fig2_348282230">
 
 
 
