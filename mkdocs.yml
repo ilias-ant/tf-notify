@@ -11,7 +11,7 @@ theme:
   locale: en
   palette:
   - scheme: default
-    primary: blue
+    primary: orange
     accent: amber
     toggle:
       icon: material/toggle-switch-off-outline
@@ -35,11 +35,15 @@ plugins:
 - search
 - mkdocstrings:
     watch:
-      - tf-notify
+      - tf_notify
     default_handler: python
 
 nav:
     - Home: index.md
+    - Installation: installation.md
+    - API Reference: api.md
+    - How to Contribute: contributing.md
+    - Documentation: documentation.md
     - License: license.md
 
 extra:

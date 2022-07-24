@@ -4,12 +4,13 @@ from .base import BaseNotificationCallback
 
 
 class SlackCallback(BaseNotificationCallback):
-    """A custom tf.callbacks.Callback that provides enables instant integration with Slack messaging app.
+    """
+    A custom tf.callbacks.Callback that provides enables instant integration with Slack messaging app.
 
     **Note**: Any attributes or methods prefixed with _underscores are forming a so called "private" API, and is
     for internal use only. They may be changed or removed at anytime.
 
-    Example:
+    Examples:
         >>> import tensorflow as tf
         >>> from tf_notify import SlackCallback
         >>>

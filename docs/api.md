@@ -1,5 +1,5 @@
 # API Reference
 
-::: tf_notify.callbacks.slack
+::: tf_notify.callbacks.slack.SlackCallback
     rendering:
-        show_root_heading: false
+        show_root_heading: true
