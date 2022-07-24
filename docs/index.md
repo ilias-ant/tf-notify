@@ -15,7 +15,7 @@ The following apps are currently supported. But, do check the project frequently
 <table>
   <tr>
     <td>
-      <img src="https://github.com/ilias-ant/tf-notify/blob/main/static/logos/slack.png" height="128" width="128" style="max-height: 128px; max-width: 128px;"><a href="https://tf-notify.readthedocs.io/en/latest/api/#tf_notify.callbacks.slack.SlackCallback">Slack</a>
+      <img src="https://raw.githubusercontent.com/ilias-ant/tf-notify/main/static/logos/slack.png" height="128" width="128" style="max-height: 128px; max-width: 128px;"><a href="https://tf-notify.readthedocs.io/en/latest/api/#tf_notify.callbacks.slack.SlackCallback">Slack</a>
     </td>
   </tr>
 </table>
