@@ -1,7 +1,8 @@
 # tf-notify
 
 [![PyPI](https://img.shields.io/pypi/v/tf-notify?color=blue&label=PyPI&logo=PyPI&logoColor=white)](https://pypi.org/project/tf-notify/) [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/tf-notify?logo=python&logoColor=white)](https://www.python.org/) [![codecov](https://codecov.io/gh/ilias-ant/tf-notify/branch/main/graph/badge.svg?token=2H0VB8I8IH)](https://codecov.io/gh/ilias-ant/tf-notify) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/ilias-ant/tf-notify/CI)](https://github.com/ilias-ant/tf-notify/actions/workflows/ci.yml)
- [![PyPI - Wheel](https://img.shields.io/pypi/wheel/tf-notify?color=orange)](https://www.python.org/dev/peps/pep-0427/)
+[![Documentation Status](https://readthedocs.org/projects/tf-notify/badge/?version=latest)](https://tf-notify.readthedocs.io/en/latest/?badge=latest)
+[![PyPI - Wheel](https://img.shields.io/pypi/wheel/tf-notify?color=orange)](https://www.python.org/dev/peps/pep-0427/)
 
 > Want to get notified on the progress of your Tensorflow model training?
 
@@ -22,7 +23,7 @@ The following apps are currently supported. But, do check the project frequently
 <table>
   <tr>
     <td>
-      <img src="https://github.com/ilias-ant/tf-notify/blob/main/static/logos/slack.png" height="128" width="128" style="max-height: 128px; max-width: 128px;"><a href="https://tf-notify.readthedocs.io/en/latest/api/#tf_notify.callbacks.slack.SlackCallback"></a>
+      <img src="https://github.com/ilias-ant/tf-notify/blob/main/static/logos/slack.png" height="128" width="128" style="max-height: 128px; max-width: 128px;"><a href="https://tf-notify.readthedocs.io/en/latest/api/#tf_notify.callbacks.slack.SlackCallback">Slack</a>
     </td>
   </tr>
 </table>
