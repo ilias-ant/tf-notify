@@ -8,7 +8,7 @@ license = "Apache-2.0 license"
 homepage = "https://pypi.org/project/tf-notify"
 documentation = "https://tf-notify.readthedocs.io"
 repository = "https://github.com/ilias-ant/tf-notify"
-keywords = ["tensorflow", "keras", "callback", "notifications", "slack"]
+keywords = ["tensorflow", "keras", "callback", "notifications", "slack", "telegram"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
