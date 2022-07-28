@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "tf-notify"
-version = "0.1.0"
+version = "0.2.0"
 description = "Want to get notified on the progress of your Tensorflow model training? Enter, a Tensorflow Keras callback to send notifications on the messaging app of your choice."
 authors = ["Ilias Antonopoulos <ilias.antonopoulos@yahoo.gr>"]
 readme = "README.md"
@@ -28,7 +28,7 @@ classifiers = [
 python = ">=3.7,<3.11"
 
 notifiers = "~1.3.3"
-tensorflow = "~2.9.1"
+tensorflow = ">=2.7.3,<=2.9.1"
 
 [tool.poetry.dev-dependencies]
 autoflake = "^1.4"

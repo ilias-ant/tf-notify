@@ -15,8 +15,12 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        python-version: ['3.7', '3.8', '3.9', '3.10']
         os: [ubuntu-latest, macos-latest, windows-latest]
+        python-version: ['3.7', '3.8', '3.9', '3.10']
+        tf-version: ['2.7.3', '2.8.2', '2.9.1']
+        exclude:
+          - python-version: '3.10'
+            tf-version: '2.7.3'
 
     steps:
     - uses: actions/checkout@v2
@@ -30,6 +34,7 @@ jobs:
         python -m pip install poetry
     - name: Install Package Dependencies (required and dev)
       run: |
+        poetry add tensorflow=${{ matrix.tf-version }} --lock
         poetry check
         poetry install
     - name: Inspect Code Security
