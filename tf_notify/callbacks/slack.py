@@ -7,11 +7,14 @@ class SlackCallback(BaseNotificationCallback):
     """
     A custom tf.callbacks.Callback that provides instant integration with Slack messaging app.
 
+    Attributes:
+        webhook_url (str): an Incoming Webhook URL for a given workspace and channel. You can generate one over at: <https://my.slack.com/services/new/incoming-webhook/>
+
     Examples:
         >>> import tensorflow as tf
         >>> from tf_notify import SlackCallback
         >>>
-        >>> model = tf.keras.Sequential(name='neural-network')
+        >>> model = tf.keras.Sequential(name="neural-network")
         >>> model.add(tf.keras.layers.Dense(1, input_dim=784))
         >>> model.compile(
         >>>     optimizer=tf.keras.optimizers.RMSprop(learning_rate=0.1),
@@ -27,7 +30,7 @@ class SlackCallback(BaseNotificationCallback):
         >>>     verbose=0,
         >>>     validation_split=0.5,
         >>>     callbacks=[
-        >>>         SlackCallback(webhook_url='https://url.to/webhook')
+        >>>         SlackCallback(webhook_url="https://url.to/webhook")
         >>>     ],
         >>> )
 
@@ -38,7 +41,7 @@ class SlackCallback(BaseNotificationCallback):
     def __init__(self, webhook_url: str):
 
         self.webhook_url = webhook_url
-        self.slack = get_notifier('slack')
+        self.slack = get_notifier("slack")
 
     def on_train_end(self, logs=None):
 
