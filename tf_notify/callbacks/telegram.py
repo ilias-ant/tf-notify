@@ -7,14 +7,15 @@ class TelegramCallback(BaseNotificationCallback):
     """
     A custom tf.callbacks.Callback that provides instant integration with Telegram messaging app.
 
-    For more on Telegram bots (and how to create one yourself) see: <https://core.telegram.org/bots> \n
-    For an example how to retrieve the `chat_id` for your bot, see: <https://stackoverflow.com/a/32572159/10251805>
+    Attributes:
+        token (str): The token of the Telegram bot you would like to use. For more on Telegram bots (and how to create one yourself) see: <https://core.telegram.org/bots>
+        chat_id (int): The unique ID that corresponds to the Telegram chat you would like to send messages to. For an example on how to retrieve the `chat_id` for your bot, see: <https://stackoverflow.com/a/32572159/10251805>
 
     Examples:
         >>> import tensorflow as tf
         >>> from tf_notify import TelegramCallback
         >>>
-        >>> model = tf.keras.Sequential(name='neural-network')
+        >>> model = tf.keras.Sequential(name="neural-network")
         >>> model.add(tf.keras.layers.Dense(1, input_dim=784))
         >>> model.compile(
         >>>     optimizer=tf.keras.optimizers.RMSprop(learning_rate=0.1),
@@ -30,7 +31,7 @@ class TelegramCallback(BaseNotificationCallback):
         >>>     verbose=0,
         >>>     validation_split=0.5,
         >>>     callbacks=[
-        >>>         TelegramCallback(token='XXXX:YYYY', chat_id=-1234)
+        >>>         TelegramCallback(token="XXXX:YYYY", chat_id=-1234)
         >>>     ],
         >>> )
 
@@ -42,7 +43,7 @@ class TelegramCallback(BaseNotificationCallback):
 
         self.token = token
         self.chat_id = chat_id
-        self.telegram = get_notifier('telegram')
+        self.telegram = get_notifier("telegram")
 
     def on_train_end(self, logs=None):
 
