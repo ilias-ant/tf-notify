@@ -21,6 +21,8 @@ The following apps are currently supported. But, do check the project frequently
    <td>
       <img src="https://raw.githubusercontent.com/ilias-ant/tf-notify/main/static/logos/telegram.png" height="128" width="128" style="max-height: 128px; max-width: 128px;"><a href="https://tf-notify.readthedocs.io/en/latest/api/#tf_notify.callbacks.telegram.TelegramCallback">Telegram</a>
     </td>
+   <td>
+      <img src="https://raw.githubusercontent.com/ilias-ant/tf-notify/main/static/logos/email.png" height="128" width="128" style="max-height: 128px; max-width: 128px;"><a href="https://tf-notify.readthedocs.io/en/latest/api/#tf_notify.callbacks.email.EmailCallback">Email (SMTP)</a>
+    </td>
   </tr>
 </table>
-
