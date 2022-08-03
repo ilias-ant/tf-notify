@@ -1,11 +1,16 @@
+import sys
 from unittest import mock
 
+import pytest
 import tensorflow as tf
 
 from tf_notify import EmailCallback
 
 
 class TestEmailCallback:
+    @pytest.mark.skipif(
+        sys.version_info < (3, 8), reason="requires python3.8 or higher"
+    )
     def test_callback_occurs_on_train_end(self):
 
         # define tf.keras model to add callback to
@@ -53,7 +58,10 @@ class TestEmailCallback:
         login, send_message = smtp_mock.method_calls
 
         # one time to authenticate against the SMTP server
-        assert login.args == ("my-cool-username", "my-cool-password")
+        assert login.args == (
+            "my-cool-username",
+            "my-cool-password",
+        )  # .args available in py3.8+, this fails on py3.7
 
         # and another, to send the message
         email = send_message.args[0]
@@ -67,6 +75,9 @@ class TestEmailCallback:
 
         assert "model <neural-network> has completed its training!" in payload
 
+    @pytest.mark.skipif(
+        sys.version_info < (3, 8), reason="requires python3.8 or higher"
+    )
     def test_callback_occurs_on_train_end_while_both_message_and_subject_are_overridden(
         self,
     ):
@@ -118,7 +129,10 @@ class TestEmailCallback:
         login, send_message = smtp_mock.method_calls
 
         # one time to authenticate against the SMTP server
-        assert login.args == ("my-cool-username", "my-cool-password")
+        assert login.args == (
+            "my-cool-username",
+            "my-cool-password",
+        )  # .args available in py3.8+, this fails on py3.7
 
         # and another, to send the message
         email = send_message.args[0]
