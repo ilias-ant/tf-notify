@@ -1,6 +1,6 @@
 # tf-notify
 
-[![PyPI](https://img.shields.io/pypi/v/tf-notify?color=blue&label=PyPI&logo=PyPI&logoColor=white)](https://pypi.org/project/tf-notify/) [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/tf-notify?logo=python&logoColor=white)](https://www.python.org/) [![TensorFlow version](https://shields.io/badge/tensorflow-2.7%20%7C%202.8%20%7C%202.9%20-simple?logo=tensorflow&style=flat)](https://www.tensorflow.org/)
+[![PyPI](https://img.shields.io/pypi/v/tf-notify?color=blue&label=PyPI&logo=PyPI&logoColor=white)](https://pypi.org/project/tf-notify/) [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/tf-notify?logo=python&logoColor=white)](https://www.python.org/) [![TensorFlow version](https://shields.io/badge/tensorflow-2.8%20%7C%202.9%20%7C%202.10%20-simple?logo=tensorflow&style=flat)](https://www.tensorflow.org/)
 [![codecov](https://codecov.io/gh/ilias-ant/tf-notify/branch/main/graph/badge.svg?token=2H0VB8I8IH)](https://codecov.io/gh/ilias-ant/tf-notify) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/ilias-ant/tf-notify/ci.yml?branch=main)](https://github.com/ilias-ant/tf-notify/actions/workflows/ci.yml)
 [![Documentation Status](https://readthedocs.org/projects/tf-notify/badge/?version=latest)](https://tf-notify.readthedocs.io/en/latest/?badge=latest)
 [![PyPI - Wheel](https://img.shields.io/pypi/wheel/tf-notify?color=orange)](https://www.python.org/dev/peps/pep-0427/)
